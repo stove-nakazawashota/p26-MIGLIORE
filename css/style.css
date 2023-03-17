@@ -216,6 +216,17 @@ body {
 
 /* レイアウト */
 .l-container {
+    margin: 0 auto;
+}
+
+#concept-section {
+    /* max-width: var(--width01); */
+    background-image: url(../img/bg-top-concept@2x.jpg);
+    height: 880px;
+    margin: 0 auto;
+}
+
+.sec-inner {
     max-width: var(--width01);
     margin: 0 auto;
 }
@@ -247,9 +258,20 @@ body {
 .concept {
     margin-top: 40px;
     margin-bottom: 190px;
+    color: var(--font-white);
 }
+
+.sec-title--white {
+    color: var(--font-white);
+    padding-top: 200px;
+}
+
+.sec-catch {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
 .concept-bg {
-    background-image: url(../img/bg-top-concept@2x.jpg);
     position: relative;
 }
 
@@ -261,15 +283,19 @@ body {
 .shop-about {
     width: 50%;
     text-align: center;
+    margin: 0 auto;
 }
 
 .flex-img-items {
     display: flex;
-    width: 65%;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
 }
 
 .flex-img-item {
-    padding: 0 50px;
+    padding: 0 20px;
+    width: 40%;
 }
 
 /* プロダクト */
@@ -281,6 +307,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: var(--width01);
+    margin: 0 auto;
 }
 
 .product-list-items {
@@ -308,6 +336,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
+    margin: 0 auto;
 
 }
 
@@ -318,6 +347,9 @@ body {
 }
 
 /* ショールーム */
+.showroom {
+    margin: 20px 0;
+}
 .showroom-list {
     display: flex;
     text-align: center;
@@ -325,4 +357,52 @@ body {
 
 .showroom-item {
     margin: 20px;
+}
+
+.onlineshop {
+}
+
+/* ページ下部ロゴ */
+.pd-logo {
+    margin: 104px 0;
+}
+.pd-logo-img {
+    width:15%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pd-shop-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sns {
+    text-align: center;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Google Map */
+.gmap iframe {
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
+/* footer */
+.footer {
+    background-color: var(--bg-primary);
+    width: 100%;
+    padding: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--font-white);
+    font-size: 12px;
 }

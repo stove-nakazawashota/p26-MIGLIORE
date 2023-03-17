@@ -42,16 +42,18 @@
     </div>
     
     <main class="l-container">
-        <div class="concept">
-            <div class="concept-bg">
-                    <picture>
+            <section id="concept-section" class="concept">
+                <div class="sec-inner">
+
+                    <div class="concept-bg">
+                        <picture>
                         <!-- 最大幅から766pxまで、PC画像を表示-->
                         <source srcset="img/bg-top-concept@2x.jpg" media="(min-width: 766px)" type="image/jpg">
                         <!-- 765pxから最小幅まで、SP画像を表示-->
-                        <img class="concept-bg-img" src="img/bg-top-concept-sp@2x.jpg">
+                        <!-- <img class="concept-bg-img" src="img/bg-top-concept-sp@2x.jpg"> -->
                     </picture>
                 </div>
-                <h2 class="sec-title">CONCEPT</h2>
+                <h2 class="sec-title sec-title--white">CONCEPT</h2>
                 
                 <div class="shop-about">
                     <h3 class="sec-catch">ディテールにこだわったクオリティファースト</h3>
@@ -70,10 +72,13 @@
                     </div>
                 </div>
             </div>
+        </section>
         
-            <div class="product">
-                <h2 class="sec-title">PRODUCT</h2>
-                <div class="product-list">
+        <section class="product">
+                <div class="section-inner">
+
+                    <h2 class="sec-title">PRODUCT</h2>
+                    <div class="product-list">
                     <div class="product-list-items">
                         <div class="product-list-item">
                             <img class="product-list-img" src="img/pic-product@2x.jpg">
@@ -86,7 +91,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="product-list-items">
                         <div class="product-list-item">
                             <img class="product-list-img" src="img/pic-product02@2x.jpg">
@@ -99,7 +104,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="product-list-items">
                         <div class="product-list-item">
                             <img class="product-list-img" src="img/pic-product03@2x.jpg">
@@ -112,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="product-list-items">
                         <div class="product-list-item">
                             <img class="product-list-img" src="img/pic-product04@2x.jpg">
@@ -126,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="instagram">
                     <p class="instagram-about">
                         インスタグラムでも商品の紹介をしています
@@ -134,44 +139,60 @@
                     <a href="#" class="component-btn component-btn--white">VIEW INSTAGRAM</a>
                 </div>
             </div>
+        </section>
+            
+            <section class="showroom">
+                <div class="sec-inner">
 
-            <div class="showroom">
-                <h2 class="sec-title">SHOWROOM</h2>
-                <div class="showroom-list">
-                    <div class="showroom-item">
-                        <img class="showroom-img" src="img/pic-top-showroom-shinjuku@2x.jpg">
-                        <p class="shop-name">新宿店</p>
-                        <a href="#" class="component-btn">VIEW MORE</a>
-                    </div>
-
-                    <div class="showroom-item">
-                        <img class="showroom-img" src="img/pic-top-showroom-shibuya@2x.jpg">
-                        <p class="shop-name">渋谷店</p>
-                        <a href="#" class="component-btn">VIEW MORE</a>
-                    </div>
-
-                    <div class="showroom-item">
-                        <img class="showroom-img" src="img/pic-top-showroom-ginza@2x.jpg">
-                        <p class="shop-name">銀座店</p>
-                        <a href="#" class="component-btn">VIEW MORE</a>
+                    <h2 class="sec-title">SHOWROOM</h2>
+                    <div class="showroom-list">
+                        <div class="showroom-item">
+                            <img class="showroom-img" src="img/pic-top-showroom-shinjuku@2x.jpg">
+                            <p class="shop-name">新宿店</p>
+                            <a href="#" class="component-btn">VIEW MORE</a>
+                        </div>
+                        
+                        <div class="showroom-item">
+                            <img class="showroom-img" src="img/pic-top-showroom-shibuya@2x.jpg">
+                            <p class="shop-name">渋谷店</p>
+                            <a href="#" class="component-btn">VIEW MORE</a>
+                        </div>
+                        
+                        <div class="showroom-item">
+                            <img class="showroom-img" src="img/pic-top-showroom-ginza@2x.jpg">
+                            <p class="shop-name">銀座店</p>
+                            <a href="#" class="component-btn">VIEW MORE</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </main>
-
+            </section>
+        </main>
+        
     <div class="onlineshop">
-        <h2 class="onlineshop">ONLINE SHOP</h2>
-        <a class="component-btn--border" href="#">VIEW SHOP</a>
-        <div class="onlineshop-img">
-            <picture>
-                <source srcset="img/bg-top-online-shop@2x.jpg" media="(min-width: 766px)" type="image/jpg">
-                <img src="img/bg-top-online-shop-sp@2x.jpg">
-            </picture>
+        <div class="onlineshop-inner">
+            <h2 class="onlineshop">ONLINE SHOP</h2>
+            <a class="component-btn--border" href="#">VIEW SHOP</a>
+            <div class="onlineshop-img">
+                <picture>
+                    <source srcset="img/bg-top-online-shop@2x.jpg" media="(min-width: 766px)" type="image/jpg">
+                    <img src="img/bg-top-online-shop-sp@2x.jpg">
+                </picture>
+            </div>
         </div>
     </div>
 
     <div class="pd-logo">
         <img class="pd-logo-img" src="img/logo.svg">
+        <div class="pd-shop-info">
+            <p>株式会社MIGLIORE</p>
+            <p>〒012-3456 東京都渋谷区ABC</p>
+            <p>TEL 012-345-6789</p>
+        </div>
+        <div class="sns">
+            <a class="sns-link" href="#">twitter</a>
+            <a class="sns-link" href="#">instagram</a>
+            <a class="sns-link" href="#">facebook</a>
+        </div>
     </div>
 
     <div class="gmap">
