@@ -246,7 +246,7 @@ body {
 /* コンセプト */
 .concept {
     margin-top: 40px;
-    margin-bottom: 280px;
+    margin-bottom: 190px;
 }
 .concept-bg {
     background-image: url(../img/bg-top-concept@2x.jpg);
@@ -306,10 +306,23 @@ body {
     padding: 80px;
     color: #fff;
     text-align: center;
+    display: flex;
+    align-items: center;
+
 }
 
 .component-btn--white {
     background-color: var(--bg-white);
     color: var(--font-primary);
     margin: 0 auto;
+}
+
+/* ショールーム */
+.showroom-list {
+    display: flex;
+    text-align: center;
+}
+
+.showroom-item {
+    margin: 20px;
 }
