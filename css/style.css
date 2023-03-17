@@ -252,6 +252,9 @@ body {
 /* キービジュアル */
 .slide-items {
     display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    gap: 24px;
 }
 
 /* コンセプト */
@@ -302,6 +305,7 @@ body {
 .product {
     background-color: var(--bg-primary-light);
     max-width: 100%;
+    padding: 50px 0;
 }
 .product-list {
     display: flex;
@@ -357,6 +361,35 @@ body {
 
 .showroom-item {
     margin: 20px;
+}
+
+.onlineshop {
+    color: var(--font-white);
+}
+
+/* オンラインショップ */
+
+.onlineshop-title {
+    position: absolute;
+    left: 43%;
+    margin-top: 50px;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.component-btn--border {
+    position: absolute;
+    margin-top: 100px;
+    left: 42%;
+    background-color: transparent;
+    border: 1px solid var(--border-white);
+}
+
+.onlineshop-img {
+    background-image: url(../img/bg-top-online-shop@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 124px 0;
 }
 
 /* ページ下部ロゴ */
