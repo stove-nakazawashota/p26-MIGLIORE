@@ -447,17 +447,51 @@ body {
 
 /* sp */
 @media screen and (max-width: 764px) {
+
+    /* 共通設定 */
     .l-container {
         width: 100%;
-        display: inline-table;
+        /* display: inline-table; */
     }
 
     .sec-inner {
         width: 100%;
     }
 
+    .component-btn {
+        width: 190px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .sec-title {
+        font-size: 22px;
+    }
+
     .sec-title--white {
         padding: 0;
+    }
+
+    .sec-catch {
+        font-size: 18px;
+    }
+
+    .sec-about {
+        font-size: 13px;
+    }
+
+    .component-btn--white {
+        margin-top: 20px;
+        margin: 0;
+    }
+
+    .component-btn--border {
+        left: 30%;
+    }
+
+    .site-top-logo-img {
+        padding-top: 40px;
+        margin-bottom: 40px;
     }
 
     /* コンセプト */
@@ -475,6 +509,7 @@ body {
         width: 50%;
     }
 
+    /* プロダクト */
     .product-list {
         width: 100%;
     }
@@ -485,14 +520,39 @@ body {
         align-items: center;
     }
 
+    .product-list-text {
+        margin: 0;
+        width: 100%;
+    }
+
     .product-list-img {
         width: 100%;
     }
 
+    /* ショールーム */
     .showroom-list {
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
+    }
+
+    .shop-name {
+        margin-top: 5px;
+    }
+
+    .instagram {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .instagram-about {
+        margin-bottom: 30px;
+    }
+    
+    /* オンラインショップ */
+    .onlineshop-title {
+        left: 35%;
+        font-size: 24px;
     }
 
     .onlineshop-img {
@@ -501,9 +561,19 @@ body {
         background-repeat: no-repeat no-repeat;
     }
 
-    .instagram {
-        width: 100%;
+    /* ページ下部 */
+    .pd-logo-img {
+        width: 70%;
+    }
+
+    .pd-shop-info {
+        font-size: 16px;
+    }
+
+    .sns {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        font-size: 14px;
     }
 }
