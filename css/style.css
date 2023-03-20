@@ -371,15 +371,14 @@ body {
 
 .onlineshop-title {
     position: absolute;
-    left: 43%;
+    left: 44.6%;
     margin-top: 50px;
     font-size: 32px;
-    margin-bottom: 20px;
 }
 
 .component-btn--border {
     position: absolute;
-    margin-top: 100px;
+    margin-top: 120px;
     left: 42%;
     background-color: transparent;
     border: 1px solid var(--border-white);
@@ -407,14 +406,23 @@ body {
 .pd-shop-info {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 20px;
+    color: var(--font-base);
 }
 
 .sns {
     text-align: center;
     display: flex;
     width: 20%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
+    color: var(--font-primary);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.sns-link {
+    margin-right: 20px;
 }
 
 /* Google Map */
@@ -435,4 +443,67 @@ body {
     text-align: center;
     color: var(--font-white);
     font-size: 12px;
+}
+
+/* sp */
+@media screen and (max-width: 764px) {
+    .l-container {
+        width: 100%;
+        display: inline-table;
+    }
+
+    .sec-inner {
+        width: 100%;
+    }
+
+    .sec-title--white {
+        padding: 0;
+    }
+
+    /* コンセプト */
+    .shop-about {
+        width: 80%;
+    }
+
+    .flex-img-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+    .flex-img-item {
+        width: 50%;
+    }
+
+    .product-list {
+        width: 100%;
+    }
+
+    .product-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-list-img {
+        width: 100%;
+    }
+
+    .showroom-list {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .onlineshop-img {
+        background-image: url(../img/bg-top-online-shop-sp@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .instagram {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
