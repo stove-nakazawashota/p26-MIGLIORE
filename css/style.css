@@ -21,6 +21,11 @@
     --width02: 920px;
 }
 
+.content {
+    --gap: clamp(1rem, 6vw, 3rem);
+    --full: minmax(var(--gap), 1fr)
+}
+
 html {
     color: #000;
     background: #fff;
@@ -211,7 +216,6 @@ body {
     text-align: center;
     margin: 10px 0;
     background: var(--bg-primary);
-
 }
 
 /* レイアウト */
@@ -316,7 +320,7 @@ body {
 }
 
 .product-list-items {
-    margin: 64px 0;
+    margin: 24px 0;
 }
 
 .product-list-item {
@@ -366,30 +370,33 @@ body {
 
 .onlineshop {
     color: var(--font-white);
+    /* position: relative; */
 }
 
 /* オンラインショップ */
-
-.onlineshop-title {
-    position: absolute;
-    left: 44.6%;
-    margin-top: 50px;
-    font-size: 32px;
-}
-
-.component-btn--border {
-    position: absolute;
-    margin-top: 120px;
-    left: 42%;
-    background-color: transparent;
-    border: 1px solid var(--border-white);
-}
-
-.onlineshop-img {
+.onlineshop-inner {
     background-image: url(../img/bg-top-online-shop@2x.jpg);
     background-position: center;
     background-size: cover;
     padding: 124px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.onlineshop-title {
+    /* position: absolute; */
+    /* left: 44.6%; */
+    /* margin-top: 50px; */
+    font-size: 32px;
+}
+
+.component-btn--border {
+    /* position: absolute; */
+    margin-top: 28px;
+    /* left: 42%; */
+    background-color: transparent;
+    border: 1px solid var(--border-white);
 }
 
 /* ページ下部ロゴ */
@@ -446,8 +453,6 @@ body {
     font-size: 12px;
 }
 
-/* タブレットサイズ */
-
 /* sp */
 @media screen and (max-width: 1082px) {
 
@@ -465,6 +470,7 @@ body {
         width: 190px;
         margin: 0 auto;
         margin-top: 20px;
+        margin-bottom: 18px;
     }
 
     .sec-title {
@@ -509,6 +515,9 @@ body {
     .flex-img-items {
         display: flex;
         flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 50px;
     }
     
     .flex-img-item {
