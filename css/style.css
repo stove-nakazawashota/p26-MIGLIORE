@@ -316,7 +316,7 @@ body {
 }
 
 .product-list-items {
-    margin: 20px 20px;
+    margin: 64px 0;
 }
 
 .product-list-item {
@@ -330,6 +330,7 @@ body {
 
 .product-list-text {
     margin-left: 50px;
+    width: 34%;
 }
 
 .instagram {
@@ -445,8 +446,10 @@ body {
     font-size: 12px;
 }
 
+/* タブレットサイズ */
+
 /* sp */
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 1082px) {
 
     /* 共通設定 */
     .l-container {
@@ -494,6 +497,10 @@ body {
         margin-bottom: 40px;
     }
 
+    #concept-section {
+        padding-top: 100px;
+    }
+
     /* コンセプト */
     .shop-about {
         width: 80%;
@@ -504,9 +511,12 @@ body {
         flex-wrap: wrap;
     }
     
+    .flex-img-item {
+        margin-bottom: 20px;
+    }
 
     .flex-img-item {
-        width: 50%;
+        width: 40%;
     }
 
     /* プロダクト */
@@ -522,7 +532,8 @@ body {
 
     .product-list-text {
         margin: 0;
-        width: 100%;
+        width: 90%;
+        margin-top: 10px;
     }
 
     .product-list-img {
@@ -563,7 +574,7 @@ body {
 
     /* ページ下部 */
     .pd-logo-img {
-        width: 70%;
+        width: 50%;
     }
 
     .pd-shop-info {
@@ -575,5 +586,10 @@ body {
         flex-direction: column;
         align-items: center;
         font-size: 14px;
+    }
+
+    .sns-link {
+        margin: 0;
+        margin-bottom: 5px;
     }
 }
